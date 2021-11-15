@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 
 app.use(express.json());
+
 app.use(cors());
 
 const foodRoute = require("./controllers/food_cont");
