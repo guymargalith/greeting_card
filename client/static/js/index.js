@@ -6,7 +6,8 @@ const taco = document.querySelector("#taco");
 const fajita = document.querySelector("#fajita");
 
 form.addEventListener("submit", addFood);
-burrito.addEventListener("click", retrieveFood);
-taco.addEventListener("click", retrieveFood);
-fajita.addEventListener("click", retrieveFood);
+// burrito.addEventListener("click", retrieveFood);
+// taco.addEventListener("click", retrieveFood);
+// fajita.addEventListener("click", retrieveFood);
 
+getFood();
