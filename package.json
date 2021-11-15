@@ -1,0 +1,16 @@
+{
+  "name": "forms_and_apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "dev": "concurrently \"watchify ./static/js/index.js -o bundle.js\" \"python -m http.server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "watchify": "^4.0.0"
+  }
+}
