@@ -10,7 +10,6 @@ function addFood(e){
     };
 
     console.log(foodData);
-    console.log('hi');
 
     const options = {
         method: "POST",
