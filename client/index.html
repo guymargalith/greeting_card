@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1>FOOD</h1>
-    <form>
+    <form id="inputform">
         <div>
             <label for="name">Name of Food</label>
             <input id="name" type="text">
@@ -20,10 +20,13 @@
         <textarea id="ingredients" cols="30" rows="10"></textarea>
         <input type="submit">
     </form>
+    
+    <form id="showform">
+        <label for="foodsList">Pick a food to see the ingredients!</label>
+        <select name="foodsList" id="foodsList">
+        </select>
+    </form>
 
-    <button id="burrito">BURRITO</button>
-    <button id="taco">TACO</button>
-    <button id="fajita">FAJITA</button>
-    <p id="paragraph"></p>
+    <p id="paragraph">Food item: <span id="nameSpan"></span>, Ingredients: <span id="ingredientsSpan"></span></p>
 </body>
 </html>
