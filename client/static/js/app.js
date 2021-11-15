@@ -33,8 +33,11 @@ function addFood(e) {
 }
 
 function retrieveFood(e) {
-	const food = e.target.id;
-	console.log(typeof food);
+	// e.preventDefault();
+	let paragraph = document.querySelector("#paragraph");
+	paragraph.style.display = "block";
+	let select = document.querySelector("#foodsList");
+	const food = select.value;
 	fetch(`http://localhost:3000/foods/${food}`)
 		.then(r => r.json())
 		.then(displayFood)
@@ -42,10 +45,9 @@ function retrieveFood(e) {
 }
 
 function displayFood(data) {
-	console.log(data);
 	const nameSpan = document.querySelector("#nameSpan");
 	const ingSpan = document.querySelector("#ingredientsSpan");
-	nameSpan.textContent = data.name.toLowerCase();
+	nameSpan.textContent = data.name;
 	ingSpan.textContent = data.ingredients.join(", ");
 }
 
